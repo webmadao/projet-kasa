@@ -1,0 +1,46 @@
+.kasa-main{
+    max-width: 1240px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: rgb(245, 244, 244);
+    border-radius: 10px;
+    
+    padding: 0;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.kasa-main ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0px;
+    gap: 20px;
+}
+
+.kasa-main ul li{
+    
+    height: 250px;
+    width: calc((100% - 100px) / 3);
+    border-radius: 10px;
+    background-color: rgb(191, 59, 59);
+    box-shadow: inset 10px -40px 40px 0px rgba(0, 0, 0, 0.5);
+}
+
+.kasa-main ul li a {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+}
+
+  
+  

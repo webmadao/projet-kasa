@@ -1,7 +1,14 @@
 .kasa-header{
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
+    border-radius: 10px;
     background-image: url("https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg");
+}
+
+.kasa-header h2{
+   padding: 80px 0;
+   
 }
