@@ -13,6 +13,21 @@
     margin-bottom: 30px;
 
 }
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0px;
+    gap: 20px;
+  }
+
+  .gallery-container img {
+    height: 250px;
+    width: calc((100% - 0,05px) / 3);
+    border-radius: 10px;
+    background-color: rgb(191, 59, 59);
+    box-shadow: inset 10px -40px 40px 0px rgba(0, 0, 0, 0.5);
+  }
 
 .kasa-main ul {
     display: flex;

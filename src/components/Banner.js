@@ -1,12 +1,10 @@
+import React from 'react';
 import '../styles/Banner.css'
 function Banner() {
     return (
-    <div className='kasa-banner'>
-    <h1>KASA</h1>
-    <ul>
-    <li><a href='#'>Accueil</a></li>
-    <li><a href='#'>A propos</a></li>
-    </ul>
+    <div className='banner'>
+   {/* } <img src='https://unsplash.it/1200/600' alt='banner' /> */}
+   <h2>Chez vous, partout et ailleurs</h2>
     </div>
     );
     }
