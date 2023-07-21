@@ -1,13 +1,50 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.css';
-import App from './components/App';
+import App from './pages/App';
 import reportWebVitals from './reportWebVitals';
+import {
+  createBrowserRouter,
+  RouterProvider, Outlet
+} from "react-router-dom";
+import NavBar from './layout/NavBar';
+import Footer from './layout/Footer';
+import AppartmentPage from './pages/AppartmentPage';
 
+const HeaderFooterLayout = () => { 
+  return(
+    <div>
+      <NavBar />
+      <Outlet />
+      <Footer />
+    </div>
+)
+}
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element:<HeaderFooterLayout />,
+    errorElement: <h1>Erreur 404</h1>,
+    children: [
+      {
+        path: "/",
+        element: <App />,
+      },
+      {
+        path: "/flats",
+        element: <AppartmentPage />,
+    },
+    {
+      path: "/about",
+      element: <h1>A propos</h1>,
+    },
+],
+  }      
+])
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

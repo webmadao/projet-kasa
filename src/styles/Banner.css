@@ -12,6 +12,9 @@
     place-items: center;
     color: white;
     font-weight: 400;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
 }
     
 .banner::before{

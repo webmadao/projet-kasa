@@ -1,8 +1,8 @@
-import '../styles/Footer.css'
+import '../layout/Footer.css'
 function Footer() {
     return (
     <div className='kasa-footer'>
-    <h2>KASA</h2>
+    <img src='Footerlogo.png' alt='logo' />
     <p>&copy; 2020 KASA. All rights reserved</p>
     </div>
     );
