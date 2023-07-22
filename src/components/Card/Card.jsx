@@ -1,6 +1,6 @@
-import '../styles/Card.css'
+import '../Card/Card.css'
 import React from 'react';
-import { LogementList } from '../data/Logement';
+import { LogementList } from '../../data/Logement';
 import { Link } from 'react-router-dom';
 
 function Card() {
