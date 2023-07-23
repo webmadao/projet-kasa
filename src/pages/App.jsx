@@ -11,7 +11,7 @@ function App() {
             
             <Banner />
             <Card />
-            <Footer />
+            
             
         </div>
     )
