@@ -9,7 +9,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: blue;
+    border-radius: 10px;
+    background-color: rgb(238, 238, 238);
     min-width: 86%; 
     max-width: 86%;
    /* align-content: center;
@@ -19,7 +20,8 @@
     padding: 0;*/
 } 
 .gallery-container a{
-
+color: white;
+text-decoration: none;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -29,7 +31,7 @@
  .gallery-item { 
     display: flex;
      flex-direction: column;
-     width: calc((100% - 20px) /4); 
+     width: calc((100% - 110px) /3); 
      height: 200px; 
      background-color: #ff6060;
     box-shadow: inset 10px -40px 40px 0px rgba(0, 0, 0, 0.5);
@@ -43,5 +45,5 @@
  }
 
  .gallery-item p{
-    padding-right: 50px;
+    padding: 0 50px 0 5px;
  }
