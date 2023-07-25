@@ -10,7 +10,7 @@ function Card(logement) {
   return (
     <div className='card'>
       <div className='gallery-container'>
-        <Link to='/flats' state = {state}>
+        <Link to='/flats'>
         {LogementList.map((logement) => (
           <div key={logement.id} className='gallery-item'>
             <img src={logement.cover} alt={logement.title} />
