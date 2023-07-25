@@ -3,10 +3,8 @@ import React from 'react';
 import { LogementList } from '../../data/Logement';
 import { Link, useParams } from 'react-router-dom';
 
-function Card(logement) {
-  const state = {
-    apartmentId: logement.id
-  };
+function Card(props) {
+  
   return (
     <div className='card'>
       <div className='gallery-container'>
