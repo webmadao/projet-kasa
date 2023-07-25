@@ -1,0 +1,20 @@
+@import './sass/variables';
+.error-main{
+    color: $primary-color;
+    text-align: center;
+    h1{
+        font-family: 'Roboto', sans-serif;
+        font-size: 150px;
+        margin-bottom: 0;
+    }
+    h2{
+        font-size: 40px;
+        font-weight: 400;
+        margin-bottom: 50px;
+    }
+    a{
+        
+        color: $primary-color;
+    }
+
+}

@@ -10,6 +10,8 @@ import {
 import NavBar from './layout/NavBar';
 import Footer from './layout/Footer';
 import AppartmentPage from './pages/AppartmentPage';
+import About from './pages/About';
+import ErrorPage from './pages/ErrorPage';
 
 const HeaderFooterLayout = () => { 
   return(
@@ -24,10 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element:<HeaderFooterLayout />,
-    errorElement: <h1>Erreur 404</h1>,
+    errorElement: <ErrorPage />,
     children: [
       {
-        path: "/",
+        path: "/home",
         element: <App />,
       },
       {
@@ -36,7 +38,7 @@ const router = createBrowserRouter([
     },
     {
       path: "/about",
-      element: <h1>A propos</h1>,
+      element: <About />,
     },
 ],
   }      
