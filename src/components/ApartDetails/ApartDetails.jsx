@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import '../ApartDetails/ApartDetails.scss';
+import { useLocation } from 'react-router-dom'
 
-function ApartDetails() {
+function ApartDetails(props) {
+  const location = useLocation()
+  const state = location.state
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
@@ -16,7 +19,7 @@ function ApartDetails() {
       </h4>
       {isVisible && (
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          {state.description}
         </p>
       )}
     </div>

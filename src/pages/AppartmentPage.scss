@@ -55,7 +55,8 @@
           gap: 5px;
           display: flex;
         }  
-    
+        
+        
       }
 
       .apart-tags {
@@ -79,13 +80,10 @@
       display: flex;
       font-size: 25px;
       cursor: pointer;
+      color: $inactive-color;
 
       .on {
         color: $primary-color;
-      }
-
-      .off {
-        color: $inactive-color;
       }
     }
   }

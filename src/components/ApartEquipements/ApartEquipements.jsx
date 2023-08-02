@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import '../ApartEquipements/ApartEquipements.scss';
+import { useLocation } from 'react-router-dom';
 
-function ApartEquipements() {
+function ApartEquipements(props) {
+  const location = useLocation();
+  const state = location.state;
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
@@ -16,13 +19,9 @@ function ApartEquipements() {
       </h4>
       {isVisible && (
         <ul>
-          <li>Climatisation</li>
-          <li>Wi-Fi</li>
-          <li>Cuisine</li>
-          <li>Espace de Travail</li>
-          <li>Fer à repasser</li>
-          <li>Sèche cheveux</li>
-          <li>Cintre</li>
+          {state.tags.map((equipment, index) => (
+            <li key={index}>{equipment}</li>
+          ))}
         </ul>
       )}
     </div>

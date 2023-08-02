@@ -1,20 +1,18 @@
-import '../Card/Card.scss'
 import React from 'react';
-import { LogementList } from '../../data/Logement';
+import "../Card/Card.scss";
 import { Link } from 'react-router-dom';
 
 function Card(props) {
-  console.log("props",props);
+  const state = props.state; // Utilisez la variable state si nécessaire
+
   return (
     <div className='card'>
       <div className='gallery-container'>
-        <Link to='/flats/:id'>
-        {LogementList.map((logement) => (
-          <div key={logement.id} className='gallery-item'>
-            <img src={logement.cover} alt={logement.title} />
-            <p>{logement.title}</p>
+        <Link to='/flats' state={state}>
+          <div className='gallery-item'>
+            <img src={props.imageUrl} alt={props.title} />
+            <p>{props.title}</p>
           </div>
-        ))}
         </Link>
       </div>
     </div>
