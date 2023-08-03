@@ -24,8 +24,13 @@ h1 {
 }
 
     
-    
       .apartment-rating {
+        @media screen and (max-width: 768px) {
+          display: flex;
+          flex-direction:row-reverse;
+          justify-content: space-between;
+          align-items: center;
+        }
         h3 {
           margin-block: 0;
           display: flex;
