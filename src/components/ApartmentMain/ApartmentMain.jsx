@@ -4,8 +4,8 @@ import { useLocation } from 'react-router-dom'
 function ApartmainMain(props) {
   const location = useLocation()
   const state = location.state
-  const name = state.host.name
-  const [firstName, ...lastName] = name;
+  const fullName = state.host.name;
+const [firstName, lastName] = fullName.split(" ");
 
   return (
     <div className='apartment-main'>
@@ -23,10 +23,11 @@ function ApartmainMain(props) {
             <h3>
               <span>{firstName}</span>
               <span>{lastName}</span>
-            </h3>
+              </h3>
             <div className='apartment-rating-badge'>
               <img src={state.host.picture} alt="" />
             </div>
+            
           </div>
           <div className='apartment-rating-stars'>
             {[1,2,3,4,5].map((num) => (
