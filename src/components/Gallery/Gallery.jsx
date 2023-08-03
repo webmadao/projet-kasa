@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "../Gallery/Gallery.scss";
 import { useLocation } from 'react-router-dom';
 
 function Gallery() {
@@ -14,16 +15,26 @@ function Gallery() {
     setCurrentIndex((prevIndex) => (prevIndex === state.pictures.length - 1 ? 0 : prevIndex + 1));
   };
 
+  if (state.pictures.length <= 1) {
+    return (
+      <div className='gallery'>
+        <div>
+          <img src={state.pictures[0]} alt='Appartment' />
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div>
+    <div className='gallery'>
       <div>
         <img src={state.pictures[currentIndex]} alt='Appartment' />
       </div>
-      <div>
-        <button onClick={handlePrev}>Précédent</button>
-        <button onClick={handleNext}>Suivant</button>
+      <div className='gallery-chevron'>
+        <button onClick={handlePrev}><i class="fa-solid fa-chevron-left"></i></button>
+        <button onClick={handleNext}><i class="fa-solid fa-chevron-right"></i></button>
       </div>
-      <div>
+      <div className='gallery-counter' >
         {currentIndex + 1} / {state.pictures.length}
       </div>
     </div>
@@ -31,3 +42,4 @@ function Gallery() {
 }
 
 export default Gallery;
+

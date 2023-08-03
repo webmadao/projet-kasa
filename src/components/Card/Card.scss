@@ -23,10 +23,9 @@ text-decoration: none;
     gap: 20px;
 }
 
- .gallery-item { 
+.gallery-item { 
     display: flex;
      flex-direction: column;
-     width: calc((100% - 110px) /3); 
      height: 200px; 
      background-color: #ff6060;
     box-shadow: inset 10px -40px 40px 0px rgba(0, 0, 0, 0.5);

@@ -1,4 +1,5 @@
 import React from 'react'
+import"../ApartmentMain/ApartmentMain.scss";
 import { useLocation } from 'react-router-dom'
 function ApartmainMain(props) {
   const location = useLocation()
