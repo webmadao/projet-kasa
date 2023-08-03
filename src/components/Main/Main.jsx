@@ -1,11 +1,12 @@
 import React from 'react';
 import { LogementList } from '../../data/Logement';
-import "../Main/Main.scss"
+import "../Main/Main.scss";
 import Card from '../Card/Card';
 
 function Main() {
   return (
     <div className='main'>
+      <div className='main-gallery'>
         {LogementList.map((logement) => (
           <Card
             key={logement.id}
@@ -14,7 +15,8 @@ function Main() {
             imageUrl={logement.cover}
             state={logement}
           />
-        ))} 
+        ))}
+      </div>
     </div>
   );
 }

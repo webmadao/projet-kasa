@@ -13,8 +13,8 @@ function Card(props) {
             <img src={props.imageUrl} alt={props.title} />
             <p>{props.title}</p>
           </div>
-        </Link>
-      </div>
+        </Link> 
+        </div> 
     </div>
   );
 }

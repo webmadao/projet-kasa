@@ -1,9 +1,43 @@
+@import './sass/variables';
 .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+    margin: 10px; 
+    gap: 20px; /* Espace entre chaque carte */
+    text-align: left; /* Centre le contenu de la carte */
+    width: 300px;
+    background-color:$primary-color;
+    width: calc((100% - 100px) /3 );
+    border-radius: 8px;
+    box-shadow: inset 10px -40px 40px 0px rgba(0, 0, 0, 0.5); /* Vous pouvez ajuster cette largeur en fonction de vos préférences */
+    text-decoration: none;
+        p{
+            color: white;
+            padding-left: 5px;
+            padding-right: 25px;
+        }
+
+        a{
+            text-decoration: none;  
+        }
   }
+  
+  .card img {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    min-height: 230px; /* Vous pouvez ajuster cette hauteur en fonction de vos préférences */
+    object-fit: cover;
+  }
+
+  .gallery-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  }
+
+
+
+
+/* 
 
   .gallery-container { 
     display: flex;
@@ -42,4 +76,4 @@ text-decoration: none;
 
  .gallery-item p{
     padding: 0 50px 0 5px;
- }
+ }*/
