@@ -7,11 +7,9 @@
   border-radius: 8px;
   height: auto;
   margin-inline: 7%;
-  @media screen and (max-width: 375px) {
-    flex-direction: column;
+  @media screen and (max-width: 376px) {
     background-color: white;
-    
-  }
+}
 }
 
 .main-gallery{
