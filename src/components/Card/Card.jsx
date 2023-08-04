@@ -3,7 +3,7 @@ import "../Card/Card.scss";
 import { Link } from 'react-router-dom';
 
 function Card(props) {
-  const state = props.state; // Utilisez la variable state si nécessaire
+  const state = props.state; 
 
   return (
     <div className='card'>
