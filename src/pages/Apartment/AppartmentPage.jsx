@@ -1,9 +1,9 @@
 import React from 'react';
-import ApartDetails from '../components/ApartDetails/ApartDetails';
-import ApartEquipements from '../components/ApartEquipements/ApartEquipements';
-import '../pages/AppartmentPage.scss';
-import Gallery from '../components/Gallery/Gallery';
-import ApartmentMain from '../components/ApartmentMain/ApartmentMain';
+import ApartDetails from '../../components/ApartDetails/ApartDetails';
+import ApartEquipements from '../../components/ApartEquipements/ApartEquipements';
+import '../Apartment/AppartmentPage.scss';
+import Gallery from '../../components/Gallery/Gallery';
+import ApartmentMain from '../../components/ApartmentMain/ApartmentMain';
 import { useLocation } from 'react-router-dom'
 
 function AppartmentPage(props) {

@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.css';
-import App from './pages/App';
+import App from './pages/Home/App';
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
   RouterProvider, Outlet
 } from "react-router-dom";
-import NavBar from './layout/NavBar';
-import Footer from './layout/Footer';
-import AppartmentPage from './pages/AppartmentPage';
-import About from './pages/About';
-import ErrorPage from './pages/ErrorPage';
+import NavBar from './layout/NavBar/NavBar';
+import Footer from './layout/Footer/Footer';
+import AppartmentPage from './pages/Apartment/AppartmentPage';
+import About from './pages/About/About';
+import ErrorPage from './pages/Error/ErrorPage';
 
 const HeaderFooterLayout = () => { 
   return(

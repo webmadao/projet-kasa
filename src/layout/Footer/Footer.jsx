@@ -1,4 +1,4 @@
-import '../layout/Footer.scss'
+import '../Footer/Footer.scss'
 function Footer() {
     return (
     <div className='kasa-footer'>

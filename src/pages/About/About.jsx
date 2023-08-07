@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import '../pages/About.scss';
-import NavBar from '../layout/NavBar';
-import Banner from '../components/Banner/Banner';
-import ApartDetails from '../components/ApartDetails/ApartDetails';
+import '../About/About.scss';
+import NavBar from '../../layout/NavBar/NavBar';
+import Banner from '../../components/Banner/Banner';
+import ApartDetails from '../../components/ApartDetails/ApartDetails';
 
 function About() {
   // États locaux pour contrôler l'affichage des paragraphes
