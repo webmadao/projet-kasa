@@ -7,14 +7,12 @@ function Card(props) {
 
   return (
     <div className='card'>
-      <div className='gallery-container'>
         <Link to='/flats' state={state}>
           <div className='gallery-item'>
             <img src={props.imageUrl} alt={props.title} />
             <p>{props.title}</p>
           </div>
-        </Link> 
-        </div> 
+        </Link>   
     </div>
   );
 }
