@@ -2,16 +2,16 @@
 .about__page {
     margin: auto;
     position: relative;
-padding-inline: 2rem;
-max-width: 85vw;
-color: $primary-color;
+    padding-inline: 2rem;
+    max-width: 85vw;
+    color: $primary-color;
     
 
       h4 {
         background-color: $primary-color;
         color: white;
-        padding-block: 0.7rem;
-        border-radius: 0.7rem;
+        padding-block: 0.8rem;
+        border-radius: 5px;
         margin-bottom: 0;
         padding-inline: 1rem;
         display: flex;
@@ -23,7 +23,7 @@ color: $primary-color;
       p {
         background-color: $background-color;
         padding: 1rem;
-        border-radius: $border-radius;
+        border-radius: 5px;
         margin-block: 0;
         position: relative;
         top: -0.3rem;
