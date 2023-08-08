@@ -1,32 +1,33 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 2rem;
-    margin: auto;
-     
-  }
-  
-  .navbar ul {
-    display: flex;
-    gap: 20px;
-    color: #ff6060;
-    font-family: sans-serif;
-    padding: 0;
-    font-size: 17px
-  }
-  
-  .navbar ul li {
-    list-style: none;
-  }
-  
-  .navbar a {
-    color: #ff6060;
-    list-style: none;
-    text-decoration: none;
-  }
-  
-  .navbar a.active-link {
-    text-decoration: underline; /* ajoute un soulignement au lien actif */
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  margin: auto;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  color: #ff6060;
+  font-family: sans-serif;
+  padding: 0;
+  font-size: 17px;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar a {
+  color: #ff6060;
+  text-decoration: none;
+}
+
+.navbar a.active-link {
+  text-decoration: underline; /* ajoute un soulignement au lien actif */
+}
+
+.navbar a:hover {
+  text-decoration: underline; /* ajoute un soulignement au survol du lien */
+}
