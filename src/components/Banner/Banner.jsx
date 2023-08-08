@@ -1,13 +1,11 @@
 import React from 'react';
-import '../Banner/Banner.scss';
-
-function Banner() {
-  return (
+import '../Banner/Banner.scss'
+function Banner({image}) {
+    return (
     <div className='banner'>
-      <img src={process.env.PUBLIC_URL + '/images/mer.png'} alt="banner" />
-      <h2>Chez vous, partout et ailleurs</h2>
+    <img src={image} alt="Banner" className="banner-image" />
     </div>
-  );
-}
+    );
+    }
 
-export default Banner;
+export default Banner

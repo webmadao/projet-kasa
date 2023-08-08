@@ -8,8 +8,9 @@ import Main from '../../components/Main/Main';
 
 function App() {
     return(
-        <div>
-            <Banner />
+        <div className="home" >
+            <Banner image="./images/mer.png" />
+            <h2>Chez vous, partout et ailleurs</h2>
             <Main />
             <Card />
         </div>

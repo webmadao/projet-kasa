@@ -33,7 +33,7 @@ function About() {
 
   return (
     <>
-      <Banner />
+      <Banner image="./images/montagnes.png" />
       <div className='about__page'>
         <div className='about-fiabilité'>
           <h4>
