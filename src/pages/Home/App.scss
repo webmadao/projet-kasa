@@ -9,8 +9,16 @@ body {
     opacity: 1;
     border-radius: 10px;
     color: white;
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 400;
-    top: -10rem;
+    text-align: left;
+    padding-inline: 50px;
+    font-size: px;
+      font-weight: 400;
+      top: -10rem;
+    @media  (min-width: 576px) {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 400;
+      top: -10rem;
+    }
+    
   }

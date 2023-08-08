@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px;
+  padding: 10px 50px;
   margin: auto;
 }
 
@@ -12,7 +12,10 @@
   color: #ff6060;
   font-family: sans-serif;
   padding: 0;
-  font-size: 17px;
+  font-size: 14px;
+  @media (min-width: 576px) {
+    font-size: 17px;
+  }
 }
 
 .navbar ul li {
