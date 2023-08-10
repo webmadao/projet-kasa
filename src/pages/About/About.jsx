@@ -39,7 +39,7 @@ function About() {
           <h4>
             <span>Fiabilité</span>
             <i
-              className={`fa-solid ${fiabiliteOpen ? 'fa-chevron-up' : 'fa-chevron-down'}`}
+              className={`fa-solid ${fiabiliteOpen ? 'fa-chevron-down' : 'fa-chevron-up'}`}
               onClick={() => toggleSection('fiabilite')}
             ></i>
           </h4>
@@ -57,7 +57,7 @@ function About() {
           <h4>
             <span>Respect</span>
             <i
-              className={`fa-solid ${respectOpen ? 'fa-chevron-up' : 'fa-chevron-down'}`}
+              className={`fa-solid ${respectOpen ? 'fa-chevron-down' : 'fa-chevron-up'}`}
               onClick={() => toggleSection('respect')}
             ></i>
           </h4>
@@ -74,7 +74,7 @@ function About() {
           <h4>
             <span>Service</span>
             <i
-              className={`fa-solid ${serviceOpen ? 'fa-chevron-up' : 'fa-chevron-down'}`}
+              className={`fa-solid ${serviceOpen ? 'fa-chevron-down' : 'fa-chevron-up'}`}
               onClick={() => toggleSection('service')}
             ></i>
           </h4>
@@ -91,7 +91,7 @@ function About() {
           <h4>
             <span>Sécurité</span>
             <i
-              className={`fa-solid ${securiteOpen ? 'fa-chevron-up' : 'fa-chevron-down'}`}
+              className={`fa-solid ${securiteOpen ? 'fa-chevron-down' : 'fa-chevron-up'}`}
               onClick={() => toggleSection('securite')}
             ></i>
           </h4>

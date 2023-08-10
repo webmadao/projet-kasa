@@ -11,7 +11,7 @@ function NavBar() {
         </Link>
       </div>
       <ul>
-        <li><NavLink exact to='/home' activeClassName='active-link'>Accueil</NavLink></li>
+        <li><NavLink exact to='/' activeClassName='active-link'>Accueil</NavLink></li>
         <li><NavLink exact to='/about' activeClassName='active-link'>A propos</NavLink></li>
       </ul>
     </nav>

@@ -5,7 +5,8 @@ import App from './pages/Home/App';
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
-  RouterProvider, Outlet
+  RouterProvider,
+  Outlet
 } from "react-router-dom";
 import NavBar from './layout/NavBar/NavBar';
 import Footer from './layout/Footer/Footer';
@@ -13,7 +14,7 @@ import AppartmentPage from './pages/Apartment/AppartmentPage';
 import About from './pages/About/About';
 import ErrorPage from './pages/Error/ErrorPage';
 
-const HeaderFooterLayout = () => { 
+const HeaderFooterLayout = () => {
   return(
     <div>
       <NavBar />
@@ -35,16 +36,16 @@ const router = createBrowserRouter([
       {
         path: "/flats",
         element: <AppartmentPage />,
-    },
-    {
-      path: "/about",
-      element: <About />,
-    },
-    {
-      path: "*",
-      element: <ErrorPage />,
-    },
-],
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "*",
+        element: <ErrorPage />,
+      },
+    ],
   }      
 ])
 const root = ReactDOM.createRoot(document.getElementById('root'));

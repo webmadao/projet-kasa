@@ -1,4 +1,5 @@
 import React from 'react';
+
 import "../Home/App.scss";
 import NavBar from '../../layout/NavBar/NavBar';
 import Banner from '../../components/Banner/Banner';

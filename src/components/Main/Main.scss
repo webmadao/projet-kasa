@@ -6,7 +6,7 @@
   align-items: center; /* Centre le contenu verticalement */
   border-radius: 8px;
   height: auto;
-  margin-top: -95px;
+  margin-top: -105px;
   margin-inline: 20px;
   @media (min-width: 576px) {
     background-color: $background-color;
@@ -21,8 +21,11 @@
   flex-wrap: wrap;
   width: 100%;
   padding: 20px;
-  gap: 20px;
-
+  gap: 5px;
+  @media (min-width: 576px) {
+    gap: 20px;
+}
+  
   
 }
  
