@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../NavBar/NavBar.scss';
 import { Link, NavLink } from 'react-router-dom';
 
 function NavBar() {
+  const [activeNavItem, setActiveNavItem] = useState(null);
+
+  const handleItemClick = (index) => {
+    setActiveNavItem(index);
+  };
+
   return (
     <nav className='navbar'>
       <div className='nav-logo'>
@@ -11,8 +17,28 @@ function NavBar() {
         </Link>
       </div>
       <ul>
-        <li><NavLink exact to='/' activeClassName='active-link'>Accueil</NavLink></li>
-        <li><NavLink exact to='/about' activeClassName='active-link'>A propos</NavLink></li>
+        <li>
+          <NavLink
+            exact
+            to='/'
+            activeClassName='active-link'
+            onClick={() => handleItemClick(0)}
+            className={activeNavItem === 0 ? 'active-nav-item' : ''}
+          >
+            Accueil
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            exact
+            to='/about'
+            activeClassName='active-link'
+            onClick={() => handleItemClick(1)}
+            className={activeNavItem === 1 ? 'active-nav-item' : ''}
+          >
+            A propos
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

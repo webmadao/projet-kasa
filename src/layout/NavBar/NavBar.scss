@@ -27,11 +27,8 @@
   text-decoration: none;
 }
 
-.navbar a.active-link {
-  text-decoration: underline; /* ajoute un soulignement au lien actif */
+.active-nav-item {
+  border-bottom: #ff6060 1px solid; 
 }
 
-.navbar a:hover {
-  text-decoration: underline; /* ajoute un soulignement au survol du lien */
-}
 
