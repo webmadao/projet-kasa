@@ -1,11 +1,11 @@
 
 .gallery img {
     width: 100%;
-    height: 20rem;
+    height: 23rem;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   .gallery-chevron{
@@ -21,7 +21,7 @@
         font-size: 50px;
         position: relative;
         padding-inline: 20px;
-        bottom:200px;
+        top:-200px;
         cursor: pointer;
       }
   }
@@ -31,6 +31,7 @@
     justify-content: center;
     background-color: none;
     position: relative;
-    bottom: 110px;
+    top: -110px;
     color: white;
+    margin-bottom: -80px;
   }
