@@ -5,6 +5,11 @@
     padding-inline: 2rem;
     color: $primary-color;
     margin-inline:20px ;
+    @media (min-width: 576px) {
+      padding-inline: 5rem;
+    }
+      
+    
     
 
       h4 {
@@ -20,7 +25,7 @@
         cursor: pointer;
       }
 
-      p {
+       p {
         background-color: $background-color;
         padding: 1rem;
         border-radius: 5px;
@@ -30,4 +35,5 @@
         z-index: -1;
         transition: opacity 2s ease-in-out;
       }
-    }
+   
+    } 
