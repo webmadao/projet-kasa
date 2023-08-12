@@ -5,8 +5,8 @@
     text-align: left;
     /*width: 300px;*/
     background-color:$primary-color;
-    //width: 100%;
-    width: 95%;
+    width: 100%;
+    //width: 95%;
     border-radius: 8px;
     box-shadow: inset 10px -40px 40px 0px rgba(0, 0, 0, 0.5);
     text-decoration: none;
@@ -20,12 +20,12 @@
             width: 100%;
             text-decoration: none;  
         }
-        @media (min-width: 768px) {
-            width: calc((100% - 120px) /3 );
-        }
-       /* @media (min-width: 576px) {
-            width: calc((100% - 100px) /2 );
+        /*@media (min-width: 768px) {
+            width: calc((100% - 100px) / 3 );
         }*/
+        @media (min-width: 576px) {
+            width: calc((100% - 100px) / 3 );
+        }
   }
   
   .card img {
