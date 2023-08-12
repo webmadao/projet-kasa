@@ -1,11 +1,11 @@
 import React from 'react';
-
 import "../Home/App.scss";
 import NavBar from '../../layout/NavBar/NavBar';
 import Banner from '../../components/Banner/Banner';
 import Card from '../../components/Card/Card';
 import Footer from '../../layout/Footer/Footer';
 import Main from '../../components/Main/Main';
+import ErrorPage from '../../pages/Error/ErrorPage';
 
 function App() {
     return(
@@ -14,6 +14,9 @@ function App() {
             <h2>Chez vous, partout et ailleurs</h2>
             <Main />
             <Card />
+            <ErrorPage>
+                    <ErrorPage component={ErrorPage} />
+                </ErrorPage>
         </div>
     )
     

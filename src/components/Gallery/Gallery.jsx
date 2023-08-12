@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "../Gallery/Gallery.scss";
 import { useLocation } from 'react-router-dom';
+import ErrorPage from '../../pages/Error/ErrorPage';
 
 function Gallery() {
   const location = useLocation();
@@ -15,7 +16,7 @@ function Gallery() {
     setCurrentIndex((prevIndex) => (prevIndex === state.pictures.length - 1 ? 0 : prevIndex + 1));
   };
 
-  if (state.pictures.length <= 1) {
+  if (!state || !state.pictures || state.pictures.length <= 1) {
     return (
       <div className='gallery'>
         <div>
