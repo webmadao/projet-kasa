@@ -32,8 +32,8 @@ function Gallery() {
         <img src={state.pictures[currentIndex]} alt='Appartment' />
       </div>
       <div className='gallery-chevron'>
-        <button onClick={handlePrev}><i class="fa-solid fa-chevron-left"></i></button>
-        <button onClick={handleNext}><i class="fa-solid fa-chevron-right"></i></button>
+        <button onClick={handlePrev}><i className="fa-solid fa-chevron-left"></i></button>
+        <button onClick={handleNext}><i className="fa-solid fa-chevron-right"></i></button>
       </div>
       <div className='gallery-counter'>
         {currentIndex + 1} / {state.pictures.length}
