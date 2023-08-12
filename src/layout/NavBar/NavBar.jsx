@@ -21,7 +21,7 @@ function NavBar() {
           <NavLink
             exact="true"
             to='/'
-            activeClassName='active-link'
+            activeclassname='active-link'
             onClick={() => handleItemClick(0)}
             className={activeNavItem === 0 ? 'active-nav-item' : ''}
           >
@@ -33,7 +33,7 @@ function NavBar() {
           <NavLink
             exact="true"
             to='/about'
-            activeClassName='active-link'
+            activeclassname='active-link'
             onClick={() => handleItemClick(1)}
             className={activeNavItem === 1 ? 'active-nav-item' : ''}
             >
