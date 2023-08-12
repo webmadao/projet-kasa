@@ -1,6 +1,10 @@
 body {
  margin: 0;
  padding: 0;
+ display:flex;
+ flex-direction: column;
+ gap: 20px;
+ 
 }
 
 .home h2 {
@@ -10,15 +14,30 @@ body {
     border-radius: 10px;
     color: white;
     text-align: left;
-    padding-inline: 50px;
-    font-size: px;
+    padding-inline: 50px;   
+    padding-bottom: 0;
+    font-size: 130%;
+      font-weight: 400;
+      top: -8rem;
+      margin-bottom: -60px; 
+    @media  (min-width: 576px) {
+     // margin-bottom: -60px;
+      text-align: center;
+      font-size: 2rem;
+      
       font-weight: 400;
       top: -10rem;
-    @media  (min-width: 576px) {
+    }
+
+    @media  (min-width: 750px) {
+     // margin-bottom: -60px;
       text-align: center;
       font-size: 2.5rem;
+      
       font-weight: 400;
       top: -10rem;
     }
     
   }
+
+ 

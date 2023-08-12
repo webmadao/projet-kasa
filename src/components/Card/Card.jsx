@@ -9,7 +9,7 @@ function Card(props) {
   }
   return (
     <div className='card'>
-        <Link to='/flats' state={state}>
+        <Link to={`/flats/${props.id}`} state={state}>
           <div className='gallery-item'>
             <img src={props.imageUrl} alt={props.title} />
             <p>{props.title}</p>

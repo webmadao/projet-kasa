@@ -42,6 +42,7 @@ function About() {
               className={`fa-solid ${fiabiliteOpen ? 'fa-chevron-down' : 'fa-chevron-up'}`}
               onClick={() => toggleSection('fiabilite')}
             ></i>
+
           </h4>
           {fiabiliteOpen && (
             <p>
@@ -51,8 +52,6 @@ function About() {
           )}
         </div>
 
-        {/* Répéter le même schéma pour les autres sections */}
-        {/* Respect */}
         <div className='about-respect'>
           <h4>
             <span>Respect</span>
@@ -69,7 +68,6 @@ function About() {
           )}
         </div>
 
-        {/* Service */}
         <div className='about-service'>
           <h4>
             <span>Service</span>
@@ -83,10 +81,10 @@ function About() {
               La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de
               perturbation du voisinage entrainera une exclusion de notre plateforme.
             </p>
+            
           )}
         </div>
 
-        {/* Sécurité */}
         <div className='about-securite'>
           <h4>
             <span>Sécurité</span>
