@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 function Card(props) {
   const state = props.state; 
-
   return (
     <div className='card'>
         <Link to={`/flats/${props.id}`} state={state}>
