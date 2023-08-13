@@ -11,7 +11,7 @@ function AppartmentPage(props) {
   const state = location.state
   console.log("location", location);
   if ( !state) {
-    return window.location.replace('/error'); // Ne rien rendre si les props sont manquantes ou vides
+    return window.location.replace('/error'); 
   }
   return (
     <div className='apartment-page'>
