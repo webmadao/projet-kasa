@@ -14,23 +14,20 @@ body {
     border-radius: 10px;
     color: white;
     text-align: left;
-    padding-inline: 50px;   
-    padding-bottom: 0;
+    padding: 0 50px 0 60px;
     font-size: 1.2rem;
       font-weight: 400;
-      top: -8rem;
+      top: -7.5rem;
       margin-bottom: -50px; 
-    @media  (min-width: 576px) {
-     // margin-bottom: -60px;
+    @media  (min-width: 576px) {    
       text-align: center;
       font-size: 2rem;
-      
       font-weight: 400;
+      padding-inline: 60px;
       top: -10rem;
     }
 
     @media  (min-width: 750px) {
-     // margin-bottom: -60px;
       text-align: center;
       font-size: 2.5rem;
       
