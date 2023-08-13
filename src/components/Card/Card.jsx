@@ -4,9 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Card(props) {
   const state = props.state; 
-  if (!props.imageUrl || !props.title) {
-    return null; // Ne rien rendre si les props sont manquantes ou vides
-  }
+
   return (
     <div className='card'>
         <Link to={`/flats/${props.id}`} state={state}>

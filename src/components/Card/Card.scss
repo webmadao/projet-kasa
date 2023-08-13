@@ -20,12 +20,13 @@
             width: 100%;
             text-decoration: none;  
         }
-        /*@media (min-width: 768px) {
-            width: calc((100% - 100px) / 3 );
-        }*/
-        @media (min-width: 576px) {
+        @media (min-width: 768px) {
             width: calc((100% - 100px) / 3 );
         }
+        /*@media (min-width: 576px) {
+            
+            width: calc((100% - 100px) / 2 );
+        }*/
   }
   
   .card img {
