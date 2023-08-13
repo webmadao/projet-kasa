@@ -17,11 +17,11 @@ function ApartDetails(props) {
         <span>Description</span>
         <i className={`fa-solid ${isVisible ? 'fa-chevron-up' : 'fa-chevron-down'}`}></i>
       </h4>
-      {isVisible && (
-        <p>
+      
+        <p className={isVisible ? 'visible' : ''}>
           {state.description}
         </p>
-      )}
+     
     </div>
   );
 }

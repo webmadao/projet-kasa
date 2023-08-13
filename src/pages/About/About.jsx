@@ -11,6 +11,8 @@ function About() {
   const [serviceOpen, setServiceOpen] = useState(false);
   const [securiteOpen, setSecuriteOpen] = useState(false);
 
+  
+
   // Fonction pour inverser l'état d'ouverture/fermeture du paragraphe
   const toggleSection = (section) => {
     switch (section) {
@@ -44,12 +46,12 @@ function About() {
             ></i>
 
           </h4>
-          {fiabiliteOpen && (
-            <p>
+          
+          <p className={fiabiliteOpen ? 'visible' : ''}>
               Les annonces postées sur Kasa garantissent une fiabilité totale. les photos sont conformes aux logements,
               et toutes les informations sont régulièrement vérifiées par nos équipes.
             </p>
-          )}
+          
         </div>
 
         <div className='about-respect'>
@@ -60,12 +62,12 @@ function About() {
               onClick={() => toggleSection('respect')}
             ></i>
           </h4>
-          {respectOpen && (
-            <p>
+          
+            <p className={respectOpen ? 'visible' : ''}>
               La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de
               perturbation du voisinage entrainera une exclusion de notre plateforme.
             </p>
-          )}
+          
         </div>
 
         <div className='about-service'>
@@ -76,13 +78,13 @@ function About() {
               onClick={() => toggleSection('service')}
             ></i>
           </h4>
-          {serviceOpen && (
-            <p>
+          
+            <p className={serviceOpen ? 'visible' : ''}>
               La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de
               perturbation du voisinage entrainera une exclusion de notre plateforme.
             </p>
             
-          )}
+          
         </div>
 
         <div className='about-securite'>
@@ -93,14 +95,14 @@ function About() {
               onClick={() => toggleSection('securite')}
             ></i>
           </h4>
-          {securiteOpen && (
-            <p>
+          
+            <p className={securiteOpen ? 'visible' : ''}>
               La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement
               correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte
               qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous
               organisons également des ateliers sur la sécurité domestique pour nos hôtes.
             </p>
-          )}
+          
         </div>
       </div>
     </>

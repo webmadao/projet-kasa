@@ -1,37 +1,54 @@
 @import './sass/variables';
+
 .apartment-details {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 
-    .apartment__description,
-    .apartment__equipement {
-        flex: 0 0 calc(50% - 20px);
+  .apartment__description,
+  .apartment__equipement {
+    flex: 0 0 calc(50% - 20px);
 
+    h4 {
+      background-color: $primary-color;
+      color: white;
+      padding-block: 0.7rem;
+      border-radius: 0.7rem;
+      margin-bottom: 0;
+      padding-inline: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+    }
 
-      h4 {
-        background-color: $primary-color;
-        color: white;
-        padding-block: 0.7rem;
-        border-radius: 0.7rem;
-        margin-bottom: 0;
-        padding-inline: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        cursor: pointer;
-      }
+    p,
+    ul {
+      background-color: $background-color;
+      padding: 1rem;
+      border-radius: $border-radius;
+      margin-block: 0;
+      position: relative;
+      top: -0.3rem;
+      z-index: -1;
+      opacity: 0;
+      max-height: 0px;
+      overflow: hidden;
+      transition: opacity 1s ease, max-height 2s ease;
+    }
 
-      p,
-      ul {
-        background-color: $background-color;
-        padding: 1rem;
-        border-radius: $border-radius;
-        margin-block: 0;
-        position: relative;
-        top: -0.3rem;
-        z-index: -1;
-      }
+    .visible {
+      opacity: 1;
+      max-height: 120px;
     }
   }
+}
+
+.fa-chevron-up,
+.fa-chevron-down {
+  transition: transform 2s ease; // Remplacez la valeur par la durée souhaitée (en secondes) pour l'animation
+}
+
+.fa-chevron-up.rotate {
+  transform: rotate(180deg); // Applique une rotation de 180 degrés lorsque la classe rotate est ajoutée
+}

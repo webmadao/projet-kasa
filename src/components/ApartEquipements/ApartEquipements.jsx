@@ -15,15 +15,15 @@ function ApartEquipements(props) {
     <div className='apartment__equipement'>
       <h4 onClick={toggleVisibility}>
         <span>Equipements</span>
-        <span><i className={`fa-solid ${isVisible ? 'fa-chevron-up' : 'fa-chevron-down'}`}></i></span>
+        <span><i className={`fa ${isVisible ? 'fa-chevron-up rotate' : 'fa-chevron-down'}`}></i></span>
       </h4>
-      {isVisible && (
-        <ul>
+      
+        <ul className={isVisible ? 'visible' : ''}>
           {state.tags.map((equipment, index) => (
             <li key={index}>{equipment}</li>
           ))}
         </ul>
-      )}
+     
     </div>
   );
 }
