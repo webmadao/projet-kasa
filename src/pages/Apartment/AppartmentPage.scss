@@ -1,4 +1,6 @@
 @import './sass/variables';
+@import '../../components/Collapse/Collapse.scss';
+@import '../../components/ApartEquipements/ApartEquipements.scss';
 
 .apartment-page {
   margin-inline: 30px;
@@ -7,19 +9,27 @@
 
   .apartment-main {
     display: flex;
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-    
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 }
-}
-.apartment-details{
+
+.apartment-collapse{
   display: flex;
   flex-direction: column;
- 
-  @media  (min-width: 576px) {
+  padding-inline: 0;
+  @media(min-width: 768px){
     display: flex;
     flex-direction: row;
+    gap: 20px;
+    width: 1000px;
+  }
+  .equipements{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
   }
 }
+
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../ApartDetails/ApartDetails.scss';
+import Collapse from '../Collapse/Collapse';
 import { useLocation } from 'react-router-dom'
 
 function ApartDetails(props) {
@@ -12,17 +13,12 @@ function ApartDetails(props) {
   };
 
   return (
-    <div className={`apartment__description ${isVisible ? 'visible' : 'hidden'}`}>
-      <h4 onClick={toggleVisibility}>
-        <span>Description</span>
-        <i className={`fa-solid ${isVisible ? 'fa-chevron-up' : 'fa-chevron-down'}`}></i>
-      </h4>
-      
-        <p className={isVisible ? 'visible' : ''}>
-          {state.description}
-        </p>
-     
-    </div>
+    <>
+    <Collapse 
+          title="Description"
+          content={state.description}
+        />
+    </>
   );
 }
 

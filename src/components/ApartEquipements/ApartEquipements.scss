@@ -49,9 +49,10 @@
 
 .fa-chevron-up,
 .fa-chevron-down {
-  transition: transform 2s ease; // Remplacez la valeur par la durée souhaitée (en secondes) pour l'animation
+  transition: transform 2s ease; 
 }
 
 .fa-chevron-up.rotate {
   transform: rotate(180deg); // Applique une rotation de 180 degrés lorsque la classe rotate est ajoutée
 }
+

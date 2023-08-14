@@ -1,19 +1,19 @@
 @import './sass/variables';
+
+
 .collapse {
     margin: auto;
     position: relative;
     display: flex;
     flex-direction: column;
     gap: -15px;
-    padding-inline: 2rem;
+    //padding-inline: 2rem;
     color: $primary-color;
-    margin-inline:20px ;
+    //margin-inline:20px ;
     @media (min-width: 576px) {
-      padding-inline: 5rem;
+        
+     //padding-inline: 5rem;
     }
-      
-
-    
 
       h4 {
         background-color: $primary-color;
@@ -60,12 +60,12 @@
     }
     
     .fa-chevron-up {
-      transform: rotate(180deg);
+      transform: rotate(-180deg);
     }
     
     .fa-chevron-down {
-      transform: rotate(-180deg);
+      transform: rotate(180deg);
     }
 }
+
     
-  

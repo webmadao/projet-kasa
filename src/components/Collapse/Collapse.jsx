@@ -4,7 +4,7 @@ import NavBar from '../../layout/NavBar/NavBar';
 import Banner from '../../components/Banner/Banner';
 import ApartDetails from '../../components/ApartDetails/ApartDetails';
 
-function Collapse({ title, content }) {
+function MyCollapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
@@ -31,4 +31,7 @@ function Collapse({ title, content }) {
   );
 }
 
-export default Collapse;
+export default MyCollapse;
+
+
+
