@@ -15,21 +15,6 @@
   }
 }
 
-.apartment-collapse{
-  display: flex;
-  flex-direction: column;
-  padding-inline: 0;
-  @media(min-width: 768px){
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    width: 1000px;
-  }
-  .equipements{
-    display: flex;
-    justify-content: space-between;
-    width: 200px;
-  }
-}
+
 
 

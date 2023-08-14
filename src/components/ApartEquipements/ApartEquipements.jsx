@@ -11,17 +11,24 @@ function ApartEquipements(props) {
  /* const toggleVisibility = () => {
     setIsVisible((prev) => !prev);
   };*/
+   return (
+     <div>
+       <Collapse
+         title="Equipements"
+         content={
+           <>
+             {state.equipments.map((equipment, index) => (
+               <span key={index}>{equipment}<br /></span>
+             ))}
+           </>
+         }
+       />
+     </div>
+   
 
-  return (
-    <div>
-      <Collapse className="equipements-collapse"
-        title="Equipements"
-        content={state.equipments.map((equipment, index) => (
-          <div key={index}>{equipment}</div>
-          ))}
-      />
-    </div>
+  
   );
+  ;
 }
 
 export default ApartEquipements;
