@@ -1,0 +1,71 @@
+@import './sass/variables';
+.collapse {
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: -15px;
+    padding-inline: 2rem;
+    color: $primary-color;
+    margin-inline:20px ;
+    @media (min-width: 576px) {
+      padding-inline: 5rem;
+    }
+      
+
+    
+
+      h4 {
+        background-color: $primary-color;
+        color: white;
+        padding-block: 0.8rem;
+        border-radius: 5px;
+        margin-bottom: 0;
+        padding-inline: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+      }
+
+      p {
+        background-color: $background-color;
+        padding: 1rem;
+        border-radius: 5px;
+        
+        margin-block: -10px;
+        position: relative;
+        z-index: -1;
+        top: -0.1rem;
+        opacity: 0;
+        max-height: 0px;
+        overflow: hidden;
+        transition: opacity 2s ease, max-height 2s ease; // Augmentez les durées de transition selon vos préférences
+      }
+   
+      .visible {
+        opacity: 1;
+        max-height: 120px;
+         // Définissez une valeur supérieure à 0 pour que l'élément soit visible
+      }
+  
+    
+    .fa-solid-chevron-down {
+     
+    transform: rotate(180deg);
+    transition: transform 1s ease; // Applique une rotation de 180 degrés lorsque la classe rotate est ajoutée
+    }
+    .fa-chevron {
+      transition: transform 3s ease;
+    }
+    
+    .fa-chevron-up {
+      transform: rotate(180deg);
+    }
+    
+    .fa-chevron-down {
+      transform: rotate(-180deg);
+    }
+}
+    
+  
