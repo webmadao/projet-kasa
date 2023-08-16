@@ -26,10 +26,15 @@ function AppartmentPage(props) {
           <MyCollapse title="Description" content={state.description} width="100%" />
         
         
-          <MyCollapse title="Equipements" width="100%">
-  {state.equipments.map((equipment, index) => (
-    <li key={index}>{equipment}</li>
-  ))}
+          <MyCollapse title="Equipements" content={state.equipments.map((equipment, index) => (
+    <li key={index}>{equipment}</li>))} width="100%">
+ { /* {state.equipments.map((equipment, index) => (
+    <p key={index}>{equipment}</p>*/} 
+      
+    
+   {/*  {state.equipments.map((equipment, index) => (
+      <div key={index}>{equipment}</div>
+  ))}*/}
 </MyCollapse>
 
         
