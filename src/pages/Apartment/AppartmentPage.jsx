@@ -21,20 +21,19 @@ function AppartmentPage(props) {
     <div className='apartment-page'>
       <Gallery />
       <ApartmentMain />
-      <div className='apartment-collapse'>
-        <div className='description'>
-        <ApartDetails />
-        </div>
-        <div className='equipements'>
-        <ApartEquipements />
-        </div>
-        {/*<MyCollapse className='description' title="Description" content={state.description} />
-        <MyCollapse className='equipements' title="Equipements">
-          {state.equipments.map((equipment, index) => (
-            <p key={index}>{equipment}</p>
-          ))}
-        </MyCollapse>*/}
-          </div>
+      <div className='apartment-collapse' width="calc(100% - 20px)" >
+        
+          <MyCollapse title="Description" content={state.description} width="100%" />
+        
+        
+          <MyCollapse title="Equipements" width="100%">
+  {state.equipments.map((equipment, index) => (
+    <li key={index}>{equipment}</li>
+  ))}
+</MyCollapse>
+
+        
+      </div>
     </div>
     
   );

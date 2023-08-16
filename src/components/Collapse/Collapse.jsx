@@ -4,7 +4,7 @@ import NavBar from '../../layout/NavBar/NavBar';
 import Banner from '../../components/Banner/Banner';
 import ApartDetails from '../../components/ApartDetails/ApartDetails';
 
-function MyCollapse({ title, content }) {
+function MyCollapse({ title, content, width, }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
@@ -13,7 +13,7 @@ function MyCollapse({ title, content }) {
 
   return (
     <>  
-      <div className='collapse'>
+      <div className='collapse' style={{ width: width }}>
         <div className='about-fiabilité'>
           <h4>
             <span>{title}</span>
