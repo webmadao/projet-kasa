@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../Collapse/Collapse.scss';
 
-function MyCollapse({ title, content, width, height }) {
+function MyCollapse({ title, content, width, height, paddingBottom }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
@@ -9,7 +9,7 @@ function MyCollapse({ title, content, width, height }) {
   };
 
   return (
-    <div className='collapse' style={{ width: width, height: height }}>
+    <div className='collapse' style={{ width: width, height: height , paddingBottom: paddingBottom }}>
       <div className='about-fiabilité'>
         <h4>
           <span>{title}</span>

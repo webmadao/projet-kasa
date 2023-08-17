@@ -1,13 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../NavBar/NavBar.scss';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 
 function NavBar() {
   const [activeNavItem, setActiveNavItem] = useState(null);
+  const location = useLocation();
 
   const handleItemClick = (index) => {
     setActiveNavItem(index);
   };
+
+  useEffect(() => {
+    
+    if (location.pathname === '/') {
+      setActiveNavItem(0);
+    } else if (location.pathname === '/about') {
+      setActiveNavItem(1);
+    }
+  }, [location]);
 
   return (
     <nav className='navbar'>
@@ -19,26 +29,25 @@ function NavBar() {
       <ul>
         <li>
           <NavLink
-            exact="true"
+            
             to='/'
-            activeclassname='active-link'
+            activeClassName='active-link'
             onClick={() => handleItemClick(0)}
             className={activeNavItem === 0 ? 'active-nav-item' : ''}
           >
-          Accueil
+            Accueil
           </NavLink>
         </li>
 
         <li>
-          <NavLink
-            exact="true"
-            to='/about'
-            activeclassname='active-link'
-            onClick={() => handleItemClick(1)}
-            className={activeNavItem === 1 ? 'active-nav-item' : ''}
-            >
-            A propos
-          </NavLink>
+        <NavLink
+  to='/about'
+  activeClassName='active-link'
+  onClick={() => handleItemClick(1)}
+  className={activeNavItem === 1 ? 'active-nav-item' : ''}
+>
+  A propos
+</NavLink>
 
         </li>
       </ul>
