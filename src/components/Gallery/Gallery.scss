@@ -27,11 +27,21 @@
   }
 
   .gallery-counter{
-    display: flex;
+    display:flex;
+    justify-content: center;
+    background-color: none;
+    position: relative;
+    top: -110px;
+    color: transparent;
+    margin-bottom: -80px;
+    @media (min-width: 576px) {
+      display: flex;
     justify-content: center;
     background-color: none;
     position: relative;
     top: -110px;
     color: white;
     margin-bottom: -80px;
+    }
+    
   }
