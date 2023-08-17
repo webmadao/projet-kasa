@@ -6,12 +6,13 @@
   display: flex;
   flex-direction: column;
   gap: -15px;
+  max-width: 1200px;
   //padding-inline: 2rem;
-  color: -color;
+  color: $primary-color;
 
   //margin-inline:20px ;
   @media (min-width: 576px) {
-     //padding-inline: 5rem;
+     padding-inline: 5rem;
   }
 
   h4 {
@@ -45,23 +46,23 @@
   .visible {
     opacity: 1;
     max-height: 200px;
-    // Définissez une valeur supérieure à 0 pour que l'élément soit visible
+    
   }
 
-  .fa-solid.fa-chevron-down {
-    transform: rotate(0deg);
-    transition: transform 1s ease; // Remettre la rotation à 0 degré lorsque la classe rotate est ajoutée
-  }
-
+  /*.fa-solid.fa-chevron-down {
+    transform: rotate(-180deg);
+    transition: transform 2s ease; 
+  }*/
   .fa-chevron {
-    transition: transform 1s ease;
+    transition: transform 2s ease;
   }
 
   .fa-chevron-up {
     transform: rotate(180deg) ;
   }
 
+  
   .fa-chevron-down {
-    transform: rotate(0deg) ;
+    transform: rotate(-180deg) ;
   }
 }
