@@ -1,6 +1,10 @@
 .banner{
-  padding-inline: 31px;
-//margin-inline: 30px;
+ 
+margin-inline: 31px;
+
+@media (min-width: 768px) {
+  margin-inline: 50px;
+}
 
   .banner-image{
     border-radius: 10px ;

@@ -20,8 +20,10 @@
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  margin-top: 10px;
   gap: 5px;
   @media (min-width: 576px) {
+    margin-top: 0;
     gap: 20px;
     padding: 20px;
 }
