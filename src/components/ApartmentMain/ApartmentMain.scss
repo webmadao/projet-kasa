@@ -58,14 +58,21 @@ h1 {
 
       .apart-tags {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
-        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 120px));
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        @media (min-width: 768px) {
+          grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
+          
+        }
 
         span {
           background-color: $primary-color;
           color: white;
           padding: 0.3em 1em;
           list-style: none;
+          
           border-radius: $border-radius;
           text-align: center;
         }
