@@ -8,13 +8,14 @@
 
 .navbar ul {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   color: #ff6060;
   font-family: sans-serif;
   padding: 0;
   font-size: 14px;
   @media (min-width: 576px) {
     font-size: 17px;
+    gap: 20px;
   }
 }
 

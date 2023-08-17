@@ -58,11 +58,13 @@ h1 {
 
       .apart-tags {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(80px, 120px));
+        grid-template-columns: repeat(auto-fit, minmax(50px, 90px));
         gap: 10px;
+        font-size: 12px;       
         margin: 0;
         padding: 0;
         @media (min-width: 768px) {
+          font-size: 16px;
           grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
           
         }
