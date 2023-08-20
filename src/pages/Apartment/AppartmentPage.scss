@@ -22,17 +22,18 @@
 
 .apartment-collapse {
   padding-top: 30px;
+  place-items: start;
   display: flex;
   flex-direction: column;
-  align-items: center;
+
   align-content: center;
 
 
   @media  (min-width: 768px) {
     display: flex;
     flex-direction: row;
-    padding-bottom: $padding-bottom;
-    height: $height;
+   // padding-bottom: $padding-bottom;
+    //height: $height;
     gap: 20px;
 
 

@@ -1,7 +1,7 @@
 @import './sass/variables';
 
 .collapse {
-  margin: auto;
+  //margin: auto;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -17,52 +17,76 @@
 
   h4 {
     
-    background-color: $primary-color;
-    color: white;
+      background-color: $primary-color;
+      color: white;
     padding-block: 0.8rem;
-    border-radius: 5px;
-    margin-bottom: 0;
+      border-radius: 5px;
+    margin: 0;
     padding-inline: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-  }
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+    }
 
-  p {
+    p {
     background-color:$background-color;
-    padding: 1rem;
-    border-radius: 5px;
-    margin-block: -10px;
-    position: relative;
-    z-index: -1;
-    top: -0.1rem;
-    opacity: 0;
-    max-height: 0px;
-    overflow: hidden;
+      padding: 1rem;
+      border-radius: 5px;
+      margin-block: -10px;
+      position: relative;
+      z-index: -1;
+      top: -0.1rem;
+      opacity: 0;
+      max-height: 0px;
+      overflow: hidden;
     transition: opacity 1.5s ease, max-height 1.5s ease; // Augmentez les durées de transition selon vos préférences
   }
 
   .visible {
-    opacity: 1;
-    max-height: 200px;
+        opacity: 1;
+        max-height: 200px;
     
-  }
+      }
 
-  .fa-solid.fa-chevron-down {
-    transform: rotate(-180deg);
-    transition: transform 2s ease; 
-  }
-  .fa-chevron {
-    transition: transform 2s ease;
-  }
+     /* @keyframes rotateToDown {
+        0% {
+          transform: rotate(0deg);
+        }
+        
+        100% {
+          transform: rotate(180deg);
+        }
+      }
+      
+      @keyframes rotateToUp {
+        0% {
+          transform: rotate(-0deg);
+        }
+         
+        100% {
+          transform: rotate(-180deg);
+        }
+      }
+      */
+      
+      i{
+        color: aliceblue;
+      }
 
-  .fa-chevron-up {
-    transform: rotate(180deg) ;
-  }
+      .open {
+        color:white;
+        transform: rotate(0deg); /* Rotation pour l'état ouvert */
+        transition: transform 0.5s ease; /* Transition fluide */
+      }
+      
+      .closed {
+        transform: rotate(-180deg); /* Pas de rotation pour l'état fermé */
+        transition: transform 0.5s ease; /* Transition fluide */
+      }
+      
+       
+    }
+ 
 
-  
-  .fa-chevron-down {
-    transform: rotate(-180deg) ;
-  }
-}
+

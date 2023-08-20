@@ -14,7 +14,7 @@ function MyCollapse({ title, content, width, height, paddingBottom }) {
         <h4>
           <span>{title}</span>
           <i
-            className={`fa-solid fa-chevron ${isOpen ? 'fa-chevron-up' : 'fa-chevron-down'}`}
+            className={`fas fa-angle-up ${isOpen ? 'open' : 'closed'}`}
             onClick={toggleCollapse}
           ></i>
         </h4>

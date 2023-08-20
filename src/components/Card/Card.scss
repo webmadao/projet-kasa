@@ -17,12 +17,12 @@
             width: 100%;
             text-decoration: none;  
         }
-        @media (max-width: 768px) {
+        @media (max-width: 1200px) {
             width: calc((100% - 100px) / 2  );
             margin-left: 23px;
         }
         
-        @media (max-width: 576px) {
+        @media (max-width: 768px) {
             width: 100%;
             margin-left: 10px;
         }
