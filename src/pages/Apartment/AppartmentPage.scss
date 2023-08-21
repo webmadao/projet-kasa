@@ -1,6 +1,5 @@
 @import './sass/variables';
 @import '../../components/Collapse/Collapse.scss';
-@import '../../components/ApartEquipements/ApartEquipements.scss';
 
 .apartment-page {
   margin-inline: 10px;
@@ -25,15 +24,11 @@
   place-items: start;
   display: flex;
   flex-direction: column;
-
   align-content: center;
-
 
   @media  (min-width: 768px) {
     display: flex;
     flex-direction: row;
-   // padding-bottom: $padding-bottom;
-    //height: $height;
     gap: 20px;
 
 

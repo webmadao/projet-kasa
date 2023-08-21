@@ -10,15 +10,13 @@
     padding-block: 35px;
     margin-top: 3vh;
 
-   
         ul{
             padding-right: 20px;
             align-items: left;
             list-style: none;
             @media (min-width: 576px) {
-                display: flex;
+            display: flex;
                 
             }
-
         }
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "../Gallery/Gallery.scss";
 import { useLocation } from 'react-router-dom';
-import ErrorPage from '../../pages/Error/ErrorPage';
+
 
 function Gallery() {
   const location = useLocation();

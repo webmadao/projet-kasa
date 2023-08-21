@@ -3,14 +3,13 @@
   display: none;
   display: flex;
   justify-content: center; 
-  align-items: center; /* Centre le contenu verticalement */
+  align-items: center; 
   border-radius: 8px;
   height: auto;
-  /*margin-top: -105px;*/
+  
   margin-inline: 20px;
   @media (min-width: 576px) {
     background-color: $background-color;
-    /*margin-top: -85px;*/
     margin-inline: 50px;
 }
 }

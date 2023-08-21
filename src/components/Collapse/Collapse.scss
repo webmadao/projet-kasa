@@ -1,19 +1,13 @@
 @import './sass/variables';
 
 .collapse {
-  //margin: auto;
   position: relative;
   display: flex;
   flex-direction: column;
-  
+
   max-width: 1200px;
-  //padding-inline: 2rem;
   color: $primary-color;
 
-  //margin-inline:20px ;
-  @media (min-width: 576px) {
-    // padding-inline: 5rem;
-  }
 
   h4 {
     
@@ -49,40 +43,16 @@
     
       }
 
-     /* @keyframes rotateToDown {
-        0% {
-          transform: rotate(0deg);
-        }
-        
-        100% {
-          transform: rotate(180deg);
-        }
-      }
-      
-      @keyframes rotateToUp {
-        0% {
-          transform: rotate(-0deg);
-        }
-         
-        100% {
-          transform: rotate(-180deg);
-        }
-      }
-      */
-      
-      i{
-        color: aliceblue;
-      }
 
       .open {
         color:white;
-        transform: rotate(0deg); /* Rotation pour l'état ouvert */
-        transition: transform 0.5s ease; /* Transition fluide */
+        transform: rotate(0deg); 
+        transition: transform 0.5s ease; 
       }
       
       .closed {
-        transform: rotate(-180deg); /* Pas de rotation pour l'état fermé */
-        transition: transform 0.5s ease; /* Transition fluide */
+        transform: rotate(-180deg); 
+        transition: transform 0.5s ease; 
       }
       
        
