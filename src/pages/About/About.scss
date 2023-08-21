@@ -1,15 +1,17 @@
 @import './sass/variables';
 .about__page {
+  padding-top: 20px;
     margin: auto;
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: -15px;
+    gap: 15px;
     padding-inline: 2rem;
+    align-items: center;
     color: $primary-color;
-    //margin-inline:20px ;
+    
     @media (min-width: 576px) {
-      padding-inline: 5rem;
+      padding-inline: 7rem;
     }
       
   }

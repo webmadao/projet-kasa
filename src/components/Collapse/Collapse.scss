@@ -5,7 +5,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: -15px;
+  
   max-width: 1200px;
   //padding-inline: 2rem;
   color: $primary-color;
@@ -17,16 +17,16 @@
 
   h4 {
     
-      background-color: $primary-color;
-      color: white;
+    background-color: $primary-color;
+    color: white;
     padding-block: 0.8rem;
-      border-radius: 5px;
+    border-radius: 5px;
     margin: 0;
     padding-inline: 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
     }
 
     p {

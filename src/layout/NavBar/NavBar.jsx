@@ -19,7 +19,6 @@ function NavBar() {
       <ul>
         <li>
           <NavLink
-            exact="true"
             to='/'
             activeclassname='active-link'
             onClick={() => handleItemClick(0)}
@@ -30,16 +29,14 @@ function NavBar() {
         </li>
 
         <li>
-        <NavLink
-            exact="true"
-  to='/about'
+          <NavLink
+            to='/about'
             activeclassname='active-link'
-  onClick={() => handleItemClick(1)}
-  className={activeNavItem === 1 ? 'active-nav-item' : ''}
->
-  A propos
-</NavLink>
-
+            onClick={() => handleItemClick(1)}
+            className={activeNavItem === 1 ? 'active-nav-item' : ''}
+            >
+              A propos
+          </NavLink>
         </li>
       </ul>
     </nav>
