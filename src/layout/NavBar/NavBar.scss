@@ -1,3 +1,4 @@
+// NavBar.scss
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -31,8 +32,3 @@
 .active-nav-item {
   border-bottom: #ff6060 1px solid; 
 }
-
-.custom-link{
-  display: none;
-}
-
