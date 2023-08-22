@@ -2,7 +2,7 @@ import React from 'react';
 import '../ApartmentMain/ApartmentMain.scss';
 import { useLocation } from 'react-router-dom';
 
-function ApartmainMain(props) {
+function ApartmainMain() {
   const location = useLocation();
   const state = location.state;
   const fullName = state.host.name;
