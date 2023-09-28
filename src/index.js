@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
   RouterProvider,
-  Outlet
+  Outlet //<Outlet /> est un composant utilisé pour rendre le contenu de l'élément parent correspondant à l'URL actuelle
 } from "react-router-dom";
 import NavBar from './layout/NavBar/NavBar';
 import Footer from './layout/Footer/Footer';
